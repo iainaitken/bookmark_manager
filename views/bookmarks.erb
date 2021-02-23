@@ -1,0 +1,16 @@
+<head>
+  <title>Bookmark Manager</title>
+</head>
+
+<body>
+  <div>
+    Here are your bookmarks:
+  </div>
+  <div>
+    <ul>
+      <% @list.each do |bookmark| %>
+        <li><%= bookmark %></li>
+      <% end %>
+    </ul>
+  </div>
+</body>
