@@ -14,16 +14,16 @@
 ## User Stories
 
 > As a user
-> 
+>
 > So that I can see my saved webpages
-> 
+>
 > I want to be able to open a list of bookmarks
 
-> 
-> 
-> 
-> 
-> 
+>
+>
+>
+>
+>
 
 ## Diagrams
 
@@ -42,3 +42,5 @@ c->v: "get webpage"
 v-->c: "return webpage to controller"
 c-->u: "response"
 ```
+
+![Sequence Diagram](sequence_diagram.png)
