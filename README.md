@@ -19,11 +19,11 @@
 >
 > I want to be able to open a list of bookmarks
 
+> As a user
 >
+> So I can store bookmark data for later retrieval
 >
->
->
->
+> I want to add a bookmark to Bookmark Manager
 
 ## Diagrams
 
@@ -52,4 +52,13 @@ To set up the database, follow the steps below:
 1. Connect to psql
 2. Create the database using the psql command CREATE DATABASE bookmark_manager;
 3. Connect to the database using the pqsl command \c bookmark_manager;
+4. Run the query in db/migrations/01_create_bookmarks_table.sql
+5. Run the query in db/migrations/02_add_title_to_bookmarks.sql
+
+To set up the test database, follow the steps below:
+
+1. Connect to psql
+2. Create the database using the psql command CREATE DATABASE bookmark_manager_test;
+3. Connect to the database using the pqsl command \c bookmark_manager_test;
 4. Run the query we have saved in the file 01_create_bookmarks_table.sql
+5. Run the query in db/migrations/02_add_title_to_bookmarks.sql

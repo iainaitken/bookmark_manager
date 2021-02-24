@@ -9,8 +9,15 @@
   <div>
     <ul>
       <% @list.each do |bookmark| %>
-        <li><%= bookmark %></li>
+        <li>
+          <a href=<%= "#{bookmark.url}" %>>
+            <%= bookmark.title %>
+          </a>
+        </li>
       <% end %>
     </ul>
+  </div>
+  <div>
+    <a href='/bookmarks/new'><button type='button'>Add Bookmark</button></a>
   </div>
 </body>
