@@ -1,23 +1,26 @@
-<head>
-  <title>Bookmark Manager</title>
-</head>
+<html lang="en">
 
-<body>
-  <div>
-    Here are your bookmarks:
-  </div>
-  <div>
-    <ul>
-      <% @list.each do |bookmark| %>
-        <li>
-          <a href=<%= "#{bookmark.url}" %>>
-            <%= bookmark.title %>
-          </a>
-        </li>
-      <% end %>
-    </ul>
-  </div>
-  <div>
-    <a href='/bookmarks/new'><button type='button'>Add Bookmark</button></a>
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark Manager</title>
+  </head>
+
+  <body>
+    <p>Here are your bookmarks:</p>
+    <div>
+      <ul>
+        <% @list.each do |bookmark| %>
+          <li>
+            <a href=<%= "#{bookmark.url}" %>>
+              <%= bookmark.title %>
+            </a>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+    <div>
+      <a href='/bookmarks/new'><button type='button'>Add Bookmark</button></a>
+    </div>
+  </body>
+</html>
