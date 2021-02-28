@@ -25,6 +25,18 @@
 >
 > I want to add a bookmark to Bookmark Manager
 
+> As a user
+>
+> So I can remove bookmarks I no longer need
+>
+> I want to delete a bookmark from Bookmark Manager
+
+> As a user
+>
+> So I can correct an error in a bookmark without deleting it, or rename it
+>
+> I want to be able to update a bookmark in Bookmark Manager
+
 ## Diagrams
 
 ### Sequence Diagram
